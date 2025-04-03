@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>TotSegur</title>
-    <!-- <link rel="stylesheet" href="/css/reset.css"> -->
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/index.js" defer></script>
+    <script src="/js/main.js" defer></script>
 </head>
 <body>
-    <header>
+    <header>          
         <div class="logo">
             <a href="/html/index.html">
                 <img src="/images/logo.svg" alt="Logo">
@@ -24,48 +26,65 @@
         </div>
         <div class="idioma">
             <button id="area-button" onclick="window.location.href='/html/area.html'">Area Privada</button>
-            <button id="idioma-button" onclick="idioma()">Idioma</button>
+            <button id="idioma-button" onclick="toggleLanguageDropdown()">Idioma</button>
             <div id="language-options" class="hidden">
                 <button onclick="changeLanguage('ca')">Català</button>
                 <button onclick="changeLanguage('es')">Castellà</button>
             </div>
         </div>
-    </header>    
+    </header>
     <main class="container">
-        <section class="serveis"></section>
-        <div class="serveis-grid">
-            <h2>Nosaltres</h2>
-            <img src="/images/logo.svg">
-            <h2>Salut</h2>
-            <img src="/images/hospital.svg">
-            <p>Assegurances mèdiques, dental, i més.</p>
-            <h2>Llar</h2>
-            <img src="/images/casa.png">
-            <p>Protecció per a la teva llar, electrodomèstics i més.</p>
-            <h2>Vehicles</h2>
-            <img src="/images/car.png">              
-            <p>Assegurances per a cotxes, motos, assistència en carretera i més.</p>    
-        </div>
-        <section class="dades">
-            <p>ASSEGURATS</p>
-            <p>6.432</p>
-            <p>OFICINES</p>
-            <p>90</p>
-            <p>PROFESSIONALS</p>
-            <p>640</p>
-            <p>SATISFACCIÓ CLIENT</p>
-            <p>8.7</p>
-        </section>
-        <section class="anunci">
-            <img src="/images/seguros.jpg">
-            <p>EL MILLOR PER A TÚ I A LA TEVA FAMILIA</p>
-            <p>TRUQUENS</p>
-            <p>Telèfon: 93 33 22 11</p>
-            <p>- T'assegurem</p>
-            <p>- Et calculem quotes</p>
-            <p>- Fem el contracte</p>
-        </section>
-        <section class="info">
+        <section class="serveis"> <!-- Secció de serveis -->
+            <div class="serveis-grid">
+                <div class="servei" onclick="servei('nosaltres')">
+                    <h2>Nosaltres</h2>
+                    <img src="/images/logo.svg">
+                </div>
+                <div class="servei" onclick="servei('salut')">
+                    <h2>Salut</h2>
+                    <img src="/images/hospital.svg">
+                    <p>Assegurances mèdiques, dental, i més.</p>
+                </div>          
+                <div class="servei" onclick="servei('llar')">
+                    <h2>Llar</h2>
+                    <img src="/images/casa.png">
+                    <p>Protecció per a la teva llar, electrodomèstics i més.</p>
+                </div>          
+                <div class="servei" onclick="servei('vehicles')">
+                    <h2>Vehicles</h2>
+                    <img src="/images/car.png">              
+                    <p>Assegurances per a cotxes, motos, assistència en carretera i més.</p>              
+                </div>          
+            </div>
+        </section>        
+        <section class="dades"> <!-- Secció de dades -->
+            <p class="sub1">ASSEGURATS</p>
+            <p class="sub2">6.432</p>
+            <p class="sub1">OFICINES</p>
+            <p class="sub2">90</p>
+            <p class="sub1">PROFESSIONALS</p>
+            <p class="sub2">640</p>
+            <p class="sub1">SATISFACCIÓ CLIENT</p>
+            <p class="sub2">8.7</p>
+        </section>        
+        <section class="anunci"> <!-- Sección d'Anunci -->
+            <div class="anunci-grid">
+                <div class="promo">
+                    <img src="/images/seguros.jpg">
+                </div>
+                <div class="anunci">
+                    <p>EL MILLOR PER A TÚ I A LA TEVA FAMILIA</p>
+                    <button class="button" onclick="desplegable()">TRUQUENS</button> 
+                    <div class="desplegable">
+                        <p>Telèfon: 93 33 22 11</p>
+                        <p>- T'assegurem</p>
+                        <p>- Et calculem quotes</p>
+                        <p>- Fem el contracte</p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <section class="info"> <!-- Sección d'aplicació i sinistres -->
             <div class="super-grid">
                 <div class="app-grid">
                     <div class="grid-img">
@@ -86,16 +105,18 @@
                         <img src="/images/hogar.png" alt="Hogar">
                     </div>
                     <div class="sinistres">
-                        <h2>Sinistres</h2>                        
+                        <h2>Sinistres</h2>              
+                        <button class="button" onclick="declarar()">Declarar sinistre</button>
+                        <button class="button" onclick="consultar()">Consultar sinistre</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <p>Email: totsegur@gmail.com</p>
+        <p>Telèfon: 933 322 211</p>
+        <p>Direcció: Carrer de la Canuda, 23, 08002 Barcelona</p>
+    </footer>
 </body>
-<footer>
-    <p>Email: totsegur@gmail.com</p>
-    <p>Telèfon: 933 322 211</p>
-    <p>Direcció: Carrer de la Canuda, 23, 08002 Barcelona</p>
-</footer>
 </html>
