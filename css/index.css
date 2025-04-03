@@ -8,7 +8,6 @@
     flex-direction: column; 
     align-items: center;     
 }
-
 .serveis-grid {
     display: flex;
     flex-direction: row; 
@@ -19,7 +18,6 @@
     box-sizing: border-box;
     width: 90%;
 }
-
 .servei {
     width: 240px;
     height: 240px;
@@ -34,52 +32,45 @@
     align-items: center;
     justify-content: space-between;
 }
-
 .servei:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
-
 h2 {
     margin: 0;
     font-size: 1.5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow';
 }
-
 .servei img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     margin: 10px 0;
 }
-
-
 .servei p {
     margin: 0;
     font-size: 0.95em;
 }
 
 .dades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.dades-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     margin-top: 5%;
+    padding: 2%;
     gap: 10px;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 2%;
+    border-radius: 10px;    
     box-sizing: border-box;
     text-align: center;
     width: 90%;
-}
-
-.sub1 {
-    grid-row: 1;
-}
-
-.sub2 {
-    grid-row: 2;
 }
 
 .anunci {
@@ -90,7 +81,6 @@ h2 {
     width: 100%;
     margin-top: 2%;
 }
-
 .anunci-grid {    
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,17 +91,14 @@ h2 {
     gap: 5%;
     margin-top: 2%;
 }
-
 .promo {
     display: flex;
     justify-content: center; 
 }
-
 .promo img {
     width: 100%;
     height: auto;
 }
-
 .anunci .button {
     margin-top: 5%; 
     margin-bottom: 5%; 
@@ -123,16 +110,13 @@ h2 {
     cursor: pointer;
     font-size: 1em;
 }
-
 .anunci .button:hover,
 .super-grid .button:hover {
     background-color: #0056b3;
 }
-
 .desplegable {
     visibility: hidden;
 }
-
 .anunci p {
     margin: 0 0 10px; 
     font-size: 1.2em;  
@@ -144,14 +128,12 @@ h2 {
     align-items: center;
     justify-content: center; 
 }
-
 .super-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2%;
     width: 90%;
 }
-
 .app-grid,
 .sinistres-grid {
     display: grid;
@@ -161,18 +143,15 @@ h2 {
     align-items: center;
     justify-content: center; 
 }
-
 .sinistres-grid img {
     width: 100%;
 }
-
 .sinistres {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
 }
-
 .super-grid .button {
     margin-top: 5%; 
     margin-bottom: 5%; 
