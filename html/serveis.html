@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta name="robots" content="NOINDEX, NOFOLLOW"> -->
+    <title>TotSegur</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/serveis.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/serveis.js" defer></script>
+  </head>
+    <body>
+        <header>          
+          <div class="logo">
+            <a href="/html/index.html">
+                <img src="/images/logo.svg" alt="Logo">
+            </a>            
+        </div>
+        <div class="menu-container">
+            <button class="menu-icon" id="dropdown-button">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <nav class="header">
+                <a href="/html/index.html">INICI</a>
+                <a href="/html/nosaltres.html">NOSALTRES</a>
+                <a href="/html/serveis.html">SERVEIS</a>
+                <a href="/html/contacte.html">CONTACTE</a>
+            </nav>
+        </div>
+        <div class="idioma">
+            <button id="area-button" onclick="window.location.href='/html/area.html'">Area Privada</button>
+            <button id="idioma-button" onclick="toggleLanguageDropdown()">Idioma</button>
+            <div id="language-options" class="hidden">
+                <button onclick="changeLanguage('ca')">Català</button>
+                <button onclick="changeLanguage('es')">Castellà</button>
+            </div>
+        </div>
+        </header>
+        <br>
+        <main class="container">
+            <div class="serveis-grid">
+                <div class="servei" onclick="toggleServei('salut')">
+                    <h2>Salut</h2>
+                    <img src="/images/hospital.svg">
+                    <p>Assegurances mèdiques, dental, i més.</p>                
+                </div>
+
+                <div class="servei" onclick="toggleServei('llar')">
+                    <h2>Llar</h2>
+                    <img src="/images/casa.png">                    
+                    <p>Protecció per a la teva llar, electrodomèstics i més.</p>                    
+                </div>
+            
+                <div class="servei" onclick="toggleServei('vehicles')">
+                    <h2>Vehicles</h2>
+                    <img src="/images/car.png">
+                    <p>Assegurances per a cotxes, motos, assistència en carretera, etc.</p>
+                </div>
+            </div>
+        </main>          
+        <br>
+        <footer>
+          <p>Email: totsegur@gmail.com</p>
+          <p>Telèfon: 933 322 211</p>
+          <p>Direcció: Carrer de la Canuda, 23, 08002 Barcelona</p>
+        </footer>
+    </body>
+</html>
