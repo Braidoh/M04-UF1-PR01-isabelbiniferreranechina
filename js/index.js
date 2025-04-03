@@ -14,3 +14,11 @@ function desplegable() { // Mostra o amaga el desplegable
       desplegable.style.visibility = "hidden";
   }
 }
+
+function declarar() { 
+  window.location.href = 'area.html';
+}
+
+function consultar() { 
+  window.location.href = 'area.html';
+}

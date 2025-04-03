@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>TotSegur</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/area.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/area.js" defer></script>
+  </head>
+    <body>
+      <header>          
+        <div class="logo">
+          <a href="/html/index.html">
+              <img src="/images/logo.svg" alt="Logo">
+          </a>            
+        </div>
+        <div class="menu-container">
+            <button class="menu-icon" id="dropdown-button">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <nav class="header">
+                <a href="/html/index.html">INICI</a>
+                <a href="/html/nosaltres.html">NOSALTRES</a>
+                <a href="/html/serveis.html">SERVEIS</a>
+                <a href="/html/contacte.html">CONTACTE</a>
+            </nav>
+        </div>
+        <div class="idioma">
+          <button id="area-button" onclick="window.location.href='/html/area.html'">Area Privada</button>
+          <button id="idioma-button" onclick="toggleLanguageDropdown()">Idioma</button>
+          <div id="language-options" class="hidden">
+            <button onclick="changeLanguage('ca')">Català</button>
+            <button onclick="changeLanguage('es')">Castellà</button>
+          </div>
+        </div>
+      </header>
+      <br>
+      <div class="container">
+            <form id="primer" onsubmit="mostrar(event)"> <!-- Primer formulari -->
+              <label for="dni">DNI:</label>
+              <input type="text" id="dni" name="dni" required>
+              <br><br>
+              <label for="password">Contrasenya:</label>
+              <input type="password" id="password" name="password" required>
+              <br><br>
+              <button type="submit">Entrar</button>
+            </form>
+          <div class="button-container">
+            <button class="button" onclick="declarar(event)">Declarar sinistre</button>
+              <form id="segon" onsubmit="resposta(event)"> <!-- Segon formulari (inicialment ocult) -->
+                <h3>DECLARAR SINISTRE</h3><br><br>
+                <label for="polissa">Número de polissa</label>
+                <input type="number" id="polissa" name="polissa" required>    
+                <br><br>            
+                <label for="data">Data i hora</label>
+                <input type="datetime-local" id="data" name="data" required>
+                <br><br>
+                <label for="lloc">Lloc</label>
+                <input type="text" id="lloc" name="lloc" required>
+                <br><br>
+                <label for="tipus">Tipus de sinistre</label>
+                <select id="tipus" name="tipus" required>
+                    <option value="salut">Salut</option>
+                    <option value="llar">Llar</option>
+                    <option value="vehicles">Vehicles</option>
+                </select>
+                <br><br>
+                <label for="descripcio">Descripció del sinistre</label>
+                <textarea id="descripcio" name="descripcio" rows="4" cols="50" required></textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+              </form>            
+              <button class="button" onclick="consultar(event)">Consultar sinistre</button>
+              <div class="consultar">
+                <p>Referencia: #711</p>
+                <br>
+                <p>Estat actual:</p>
+                <li>Apertura ✅</li>
+                <li>Assignació gestor ✅</li>
+                <li>Contacte</li>
+                <li>Tancament</li>
+              </div>
+            <button class="button" onclick="altres(event)">Altres consultes</button>
+              <div class="altres">
+                <p>Descripció: El meu cotxe s'ha cremat de l'incendi que va haver-hi en el parking del Mercadona.</p>
+                <br>
+                <p>En breu, ens posarem en contacte amb vosté</p>
+              </div>
+          </div>
+      </div>
+      <br>
+      <footer>
+        <p>Email: totsegur@gmail.com</p>
+        <p>Telèfon: 93 33 22 11</p>
+        <p>Direcció: Carrer de la Canuda, 23, 08002 Barcelona</p>
+      </footer>
+    </body>
+</html>
+    
