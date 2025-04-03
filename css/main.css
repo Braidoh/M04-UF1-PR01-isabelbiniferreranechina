@@ -4,6 +4,11 @@ html, body {
     font-family: 'Arial', sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
     background-color: blue;  
     text-align: center;
