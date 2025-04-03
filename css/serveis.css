@@ -53,3 +53,35 @@ body {
   border-radius: 10px;
   padding: 2%; 
 }
+
+.sub1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  text-transform: uppercase; 
+  font-weight: bold; 
+  text-decoration: underline;
+}
+
+.sub1:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.sub2 {
+  font-weight: bold; 
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.sub-bloc {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.sub-bloc.open {
+  max-height: 1000px;
+}
