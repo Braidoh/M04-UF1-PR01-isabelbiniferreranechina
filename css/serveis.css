@@ -45,3 +45,11 @@ body {
   object-fit: contain;
   margin: 10px 0;
 }
+
+.contingut {
+  display: none;
+  width: 60%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2%; 
+}
