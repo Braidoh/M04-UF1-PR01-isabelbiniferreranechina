@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+    flex-direction: column;    
+    height: 100%;  
+    display: flex;  
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center;  
+}
