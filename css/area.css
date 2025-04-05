@@ -1,7 +1,12 @@
+html, body {    
+    height: 100%;    
+}
+
 .container {
     display: flex;
     flex-direction: column;    
-    height: 100%;
+    
+    height: auto;
     align-items: center; /* Centra els elements horitzontalment */
     justify-content: center;    
 }
@@ -9,7 +14,7 @@
 .button-container {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .button-container p {
@@ -71,6 +76,10 @@ form button[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
     float: right; /* Mantiene el botón alineado a la derecha */
+}
+
+#primer {
+    margin-top: 15vh;
 }
 
 #primer button[type="submit"] {

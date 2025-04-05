@@ -9,6 +9,11 @@ function mostrar(event) {
     document.getElementById('primer').style.display = 'none';
 }
 
+function alerta(event) { // Mostra un missatge d'alerta
+    event.preventDefault();
+    alert("En breu, ens posarem en contacte amb vosté");
+}
+
 function declarar() { // Mostra o oculta el segon formulari
     const status = document.getElementById('segon');    
     if (status.style.display === 'block') { 

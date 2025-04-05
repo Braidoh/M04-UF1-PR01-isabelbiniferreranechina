@@ -1,8 +1,11 @@
-.container {
-  display: grid;
-  height: auto;  
-  align-items: center;
-  justify-content: center;
+html, body {    
+  height: 100%;    
+}
+
+.container {    
+    display: grid;    
+    align-items: center;
+    justify-content: center;
 }
 
 .serveis-grid {
@@ -10,7 +13,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 40px;
+  margin-top: 12%;
   height: auto;
 }
 
@@ -46,7 +49,8 @@
     border-radius: 10px;
     width: 60%;
     margin: 0 auto;
-    margin-top: 5%;  
+    margin-top: 5%;
+    margin-bottom: 5%;
     padding: 2%; 
 }
 
