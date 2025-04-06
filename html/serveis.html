@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <!-- <meta name="robots" content="NOINDEX, NOFOLLOW"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TotSegur</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -17,7 +17,12 @@
                 <img src="/images/logo.svg" alt="Logo">
             </a>            
         </div>
-        <div class="menu-container">            
+        <div class="menu-container">
+            <button class="menu-icon" id="menu-button">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
             <nav class="header">
                 <a href="/html/index.html">INICI</a>
                 <a href="/html/nosaltres.html">NOSALTRES</a>
@@ -36,23 +41,25 @@
         </header>
         <br>
         <main class="container">
-            <div class="serveis-grid">
-                <div class="servei" onclick="toggleServei('salut')">
-                    <h2>Salut</h2>
-                    <img src="/images/hospital.svg">
-                    <p>Assegurances mèdiques, dental, i més.</p>                
+            <section class="serveis">
+                <div class="serveis-grid">
+                    <div class="servei" onclick="toggleServei('salut')">
+                        <h2>Salut</h2>
+                        <img src="/images/hospital.svg">
+                        <p>Assegurances mèdiques, dental, i més.</p>                
+                    </div>
+                    <div class="servei" onclick="toggleServei('llar')">
+                        <h2>Llar</h2>
+                        <img src="/images/casa.png">                    
+                        <p>Protecció per a la teva llar, electrodomèstics i més.</p>                    
+                    </div>            
+                    <div class="servei" onclick="toggleServei('vehicles')">
+                        <h2>Vehicles</h2>
+                        <img src="/images/car.png">
+                        <p>Assegurances per a cotxes, motos, assistència en carretera, etc.</p>
+                    </div>
                 </div>
-                <div class="servei" onclick="toggleServei('llar')">
-                    <h2>Llar</h2>
-                    <img src="/images/casa.png">                    
-                    <p>Protecció per a la teva llar, electrodomèstics i més.</p>                    
-                </div>            
-                <div class="servei" onclick="toggleServei('vehicles')">
-                    <h2>Vehicles</h2>
-                    <img src="/images/car.png">
-                    <p>Assegurances per a cotxes, motos, assistència en carretera, etc.</p>
-                </div>
-            </div>
+            </section>
             <section class="contingut">
                 <div class="salut">
                     <p class="sub1">Metges</p>
