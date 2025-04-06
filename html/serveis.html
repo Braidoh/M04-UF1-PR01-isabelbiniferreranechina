@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,38 +32,40 @@
         </div>
         <div class="idioma">
             <button id="area-button" onclick="window.location.href='/html/area.html'">Area Privada</button>
-            <button id="idioma-button" onclick="toggleLanguageDropdown()">Idioma</button>
+            <button id="idioma-button" onclick="idioma()">Idioma</button>
             <div id="language-options" class="hidden">
-                <button onclick="changeLanguage('ca')">Català</button>
-                <button onclick="changeLanguage('es')">Castellà</button>
+                <button onclick="canvi('ca')">Català</button>
+                <button onclick="canvi('es')">Castellà</button>
             </div>
         </div>
         </header>
         <br>
         <main class="container">
-            <section class="serveis">
+            <section class="serveis">                
                 <div class="serveis-grid">
                     <div class="servei" onclick="toggleServei('salut')">
                         <h2>Salut</h2>
-                        <img src="/images/hospital.svg">
+                        <img src="/images/hospital.svg" alt="Hospital">
                         <p>Assegurances mèdiques, dental, i més.</p>                
                     </div>
                     <div class="servei" onclick="toggleServei('llar')">
                         <h2>Llar</h2>
-                        <img src="/images/casa.png">                    
+                        <img src="/images/casa.png" alt="Casa">                    
                         <p>Protecció per a la teva llar, electrodomèstics i més.</p>                    
                     </div>            
                     <div class="servei" onclick="toggleServei('vehicles')">
                         <h2>Vehicles</h2>
-                        <img src="/images/car.png">
+                        <img src="/images/car.png" alt="Vehicle">
                         <p>Assegurances per a cotxes, motos, assistència en carretera, etc.</p>
                     </div>
                 </div>
             </section>
             <section class="contingut">
+                <h2>CONTINGUT</h2>
                 <div class="salut">
-                    <p class="sub1">Metges</p>
-                    <div class="sub-bloc">Desplegable de metges per especialitats
+                    <button class="sub1">Metges</button>
+                    <div class="sub-bloc">
+                        <p>Desplegable de metges per especialitats</p>
                         <p class="sub2">Medicina general</p>
                         <p>Dra. Núria Soler (C/ Balmes 212, Barcelona) - De dilluns a divendres, de 9h a 13h</p>                        
                         <p class="sub2">Cardiologia</p>
@@ -78,7 +80,7 @@
                         <p>Dr. Manel Vicens (C/ Gran Via 456, Barcelona) - De dilluns a dissabte, de 10h a 14h i de 16h a 20h</p>
                     </div>
                     <br><br>
-                    <p class="sub1">Urgències</p>
+                    <button class="sub1">Urgències</button>
                     <div class="sub-bloc">
                         <p class="sub2">A domicili</p>
                         <p>Telèfon: 93 413 23 69</p>
@@ -89,7 +91,6 @@
                     </div>
                 </div>
                 <div class="llar">
-                    <p class="sub1">Assegurances</p>
                     <p class="sub2">Màxima flexiblitat i per les teves cobertures</p>
                     <p>- Robatori</p>
                     <p>- Incendi</p>
@@ -109,7 +110,7 @@
                     <p>Dubtes i càlcul de quotes</p>
                 </div>    
                 <div class="vehicles">
-                    <p class="sub1">Assegurances a tercers</p>
+                    <button class="sub1">Assegurances a tercers</button>
                     <div class="sub-bloc">
                         <p>L'assegurança a tercers és l'opció més bàsica i econòmica, ideal per als que busquen complir amb la legislació mínima i protegir-se dels danys que puguis causar altres persones.</p>
                         <p class="sub2">Cobertura</p>
@@ -121,7 +122,7 @@
                         <p>- Pèrdua del vehicle en cas incendis ni danys naturals</p>
                     </div>
                     <br>
-                    <p class="sub1">Assegurances a tercers amplaiada</p>
+                    <button class="sub1">Assegurances a tercers amplaiada</button>
                     <div class="sub-bloc">
                         <p>L'Assegurança a Tercers Ampliat us ofereix una protecció intermèdia, afegint més cobertures per a tranquil·litat addicional.</p>
                         <p class="sub2">Cobertura</p>
@@ -133,7 +134,7 @@
                         <p>- Danys al teu propi vehicle en cas d'accident</p>
                     </div>
                     <br>
-                    <p class="sub1">Assegurances a tot risc</p>
+                    <button class="sub1">Assegurances a tot risc</button>
                     <div class="sub-bloc">
                         <p>L'Assegurança a Tot Risc és la més completa, ideal per als que desitgen una protecció total per al seu vehicle, sense importar qui hagi estat el culpable de l'accident.</p>
                         <p class="sub2">Cobertura</p>

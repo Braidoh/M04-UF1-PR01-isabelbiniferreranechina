@@ -1,0 +1,29 @@
+{
+    "header": {
+        "1": "INICIO",
+        "2": "NOSOTROS",
+        "3": "SERVICIOS",
+        "4": "CONTACTO"
+    },
+    "body": {        
+        "nosaltres": {
+            "QuiSom": "¿Quiénes somos?",
+            "paragraph1": "TotSegur se fundó en febrero de 2001 para ofrecer seguros en el ámbito de la Salud, el Hogar y todo tipo de Vehículos.",
+            "paragraph2": "Nuestro objetivo es ofrecer servicios de calidad con buenos precios y tarifas claras, pero sobre todo con una proximidad real con el cliente. Por eso operamos en el ámbito de Cataluña con una extensa red que va desde ciudades hasta los rincones más apartados de las comarcas.",
+            "paragraph3": "Para lograrlo, disponemos de canales de comunicación con el cliente muy rápidos y de un grupo de profesionales especializados en las diferentes tareas para ofrecer un excelente servicio.",
+            "PerqueNosaltres": "¿Por qué nosotros?",
+            "resaltat": "PROXIMIDAD - TRATO PERSONALIZADO - PRECIOS RAZONABLES - BUEN SERVICIO"
+        },
+        "contacte": {
+            "1": "Assistencia de Salud 📞 934 132 369",
+            "2": "Assistencia de Hogar 📞900 400 329",
+            "3": "Assistencia de Vehículos 📞 901 679 441",            
+            "4": "Otras gestiones 📞 933 322 211"
+        }
+    },
+    "footer": {
+        "email": "Correo electrónico: totsegur@gmail.com",
+        "phone": "Teléfono: 933 322 211",
+        "address": "Dirección: Carrer de la Canuda, 23, 08002 Barcelona"
+    }
+}

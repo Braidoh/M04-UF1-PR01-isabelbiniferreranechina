@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/nosaltres.css">
     <script src="/js/main.js" defer></script>
+    <script src="/js/nosaltres.js" defer></script>
   </head>
     <body>
         <header>          
@@ -26,15 +27,15 @@
                 <a href="/html/index.html">INICI</a>
                 <a href="/html/nosaltres.html">NOSALTRES</a>
                 <a href="/html/serveis.html">SERVEIS</a>
-                <a href="/html/contacte.html">CONTACTE</a>
+                <a href="/html/contacte.html" >CONTACTE</a>
             </nav>
         </div>
         <div class="idioma">
           <button id="area-button" onclick="window.location.href='/html/area.html'">Area Privada</button>
-          <button id="idioma-button" onclick="toggleLanguageDropdown()">Idioma</button>
+          <button id="idioma-button" onclick="idioma()">Idioma</button>
           <div id="language-options" class="hidden">
-            <button onclick="changeLanguage('ca')">Català</button>
-            <button onclick="changeLanguage('es')">Castellà</button>
+            <button onclick="canvi('ca')">Català</button>
+            <button onclick="canvi('es')">Castellà</button>
           </div>
         </div>
         </header>
@@ -45,7 +46,7 @@
               <p>El nostre objectiu és oferir uns serveis de qualitat amb bons preus i tarifes clares, però sobre tot amb una proximitat real amb el client. Per això operem en l'àmbit de Catalunya amb una extensa xarxa que va des de ciutats als racons més apartats de les comarques.</p>
               <p>Per aconseguir-ho disposem d'uns canals de comunicació amb el client molt ràpids i d'un grup de professionals especialitzats en els diferents tipus de tasques per oferir un excelent servei.</p>
             <h2>Per què nosaltres?</h2>
-            <p class="destacado">PROXIMITAT - TRACTE PERSONALITZAT - PREUS RAONABLES - BON SERVEI</p>
+            <p class="resaltat">PROXIMITAT - TRACTE PERSONALITZAT - PREUS RAONABLES - BON SERVEI</p>
         </div>
         <br>
         <footer>

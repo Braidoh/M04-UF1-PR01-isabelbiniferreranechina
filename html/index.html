@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,10 +32,10 @@
         </div>
         <div class="idioma">
             <button id="area-button" onclick="window.location.href='/html/area.html'">Area Privada</button>
-            <button id="idioma-button" onclick="toggleLanguageDropdown()">Idioma</button>
+            <button id="idioma-button" onclick="idioma()">Idioma</button>
             <div id="language-options" class="hidden">
-                <button onclick="changeLanguage('ca')">Català</button>
-                <button onclick="changeLanguage('es')">Castellà</button>
+                <button onclick="canvi('ca')">Català</button>
+                <button onclick="canvi('es')">Castellà</button>
             </div>
         </div>
     </header>
@@ -44,27 +44,27 @@
             <div class="serveis-grid">
                 <div class="servei" onclick="servei('nosaltres')">
                     <h2>Nosaltres</h2>
-                    <img src="/images/logo.svg">
+                    <img src="/images/logo.svg" alt="Logo">
                     <p>Qui som</p>
                 </div>
                 <div class="servei" onclick="servei('salut')">
                     <h2>Salut</h2>
-                    <img src="/images/hospital.svg">
+                    <img src="/images/hospital.svg" alt="Hospital">
                     <p>Assegurances mèdiques, dental, i més.</p>
                 </div>          
                 <div class="servei" onclick="servei('llar')">
                     <h2>Llar</h2>
-                    <img src="/images/casa.png">
+                    <img src="/images/casa.png" alt="Casa">
                     <p>Protecció per a la teva llar, electrodomèstics i més.</p>
                 </div>          
                 <div class="servei" onclick="servei('vehicles')">
                     <h2>Vehicles</h2>
-                    <img src="/images/car.png">              
+                    <img src="/images/car.png" alt="Cotxe">              
                     <p>Assegurances per a cotxes, motos, assistència en carretera i més.</p>              
                 </div>          
             </div>
         </section>        
-        <section class="dades"> <!-- Secció de dades -->
+        <div class="dades"> <!-- Secció de dades -->
             <div class="dades-grid">
                 <p>ASSEGURATS</p>
                 <p>6.432</p>
@@ -75,14 +75,14 @@
                 <p>SATISFACCIÓ CLIENT</p>
                 <p>8.7</p>
             </div>
-        </section>        
+        </div>        
         <section class="anunci"> <!-- Sección d'Anunci -->
             <div class="anunci-grid">
                 <div class="promo">
-                    <img src="/images/seguros.jpg">
+                    <img src="/images/seguros.jpg" alt="Seguros">
                 </div>
                 <div class="anunci">
-                    <p>EL MILLOR PER A TÚ I A LA TEVA FAMILIA</p>
+                    <h3>EL MILLOR PER A TÚ I A LA TEVA FAMILIA</h3>
                     <button class="button" onclick="desplegable()">TRUQUENS</button> 
                     <div class="desplegable">
                         <p>Telèfon: 93 33 22 11</p>
