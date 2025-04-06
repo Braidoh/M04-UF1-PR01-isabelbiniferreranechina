@@ -60,7 +60,7 @@ header img {
 }
 
 .header {
-    display: flex;
+    display: flex;    
 }
 
 .header a {
@@ -115,7 +115,7 @@ footer {
     .header {
         display: none;
         position: absolute;
-        top: 60px;
+        top: 100px;
         left: 0;
         width: 100%;
         background-color: blue;
@@ -133,6 +133,8 @@ footer {
         padding: 15px;
         color: white;
         text-decoration: none;
+        border-top: 1px solid white;
+
     }
 
     .menu-icon.active + .header {

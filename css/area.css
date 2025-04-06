@@ -100,13 +100,15 @@ h3 {
 }
 
 .consultar,
-.altres {    
+.altres {
+    font-size: 16px;
     margin-top: 3%;
     margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 20px 20px;        
     border-radius: 8px;
-    border: 1px solid #333; /* Borde gris claro */
-    font-size: 16px;    
+    border: 1px solid #333; /* Borde gris claro */   
 }
 
 li {

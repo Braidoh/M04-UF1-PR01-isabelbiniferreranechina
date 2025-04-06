@@ -147,7 +147,7 @@ h2 {
     margin-top: 2%;
     width: 90%;
 }
-.app-grid,
+.app,
 .sinistres-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -175,4 +175,37 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+}
+
+@media (max-width: 745px) { 
+    .serveis-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .dades-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .anunci-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .super-grid {        
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: center;
+    }    
+    .app,
+    .sinistres-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;        
+        width: 100%;
+    }
+    .app {        
+        justify-items: center; 
+        align-items: center;
+    }
+    .app-text {
+        text-align: center;
+    }
 }
