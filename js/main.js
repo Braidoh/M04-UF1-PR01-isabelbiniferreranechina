@@ -171,26 +171,26 @@ async function translate(paginaActual) {
     contacte3.textContent = data.body.contacte.contacte3;
     contacte4.textContent = data.body.contacte.contacte4;
   } else if (paginaActual === "area") { /* Area Privada */
-    const area1 = document.querySelector("label[for='dni']"); // DNI
-    const area2 = document.querySelector("label[for='password']"); // Contraseña
-    const area3 = document.querySelector("#primer button"); // Acceder
-    const area4 = document.querySelector(".button-container .button:nth-child(1)"); // Declarar siniestro
-    const area5 = document.querySelector("#segon h3"); // DECLARAR SINIESTRO
-    const area6 = document.querySelector("label[for='polissa']"); // Número de póliza
-    const area7 = document.querySelector("label[for='data']"); // Fecha y hora del siniestro
-    const area8 = document.querySelector("label[for='lloc']"); // Lugar del siniestro
-    const area9 = document.querySelector("label[for='tipus']"); // Tipo de siniestro
-    const area10 = document.querySelector("label[for='descripcio']"); // Descripción del siniestro
-    const area11 = document.querySelector("#segon button[type='submit']"); // Enviar
-    const area12 = document.querySelector(".button-container .button:nth-child(3)"); // Consultar siniestro
-    const area13 = document.querySelector(".consultar p:nth-child(1)"); // Referencia #711
-    const area14 = document.querySelector(".consultar p:nth-child(3)"); // Estado actual
-    const area15 = document.querySelector(".consultar ul li:nth-child(1)"); // Apertura ✅
-    const area16 = document.querySelector(".consultar ul li:nth-child(2)"); // Asignación de gestor ✅
-    const area17 = document.querySelector(".consultar ul li:nth-child(3)"); // Contacto
-    const area18 = document.querySelector(".consultar ul li:nth-child(4)"); // Tancamiento
-    const area19 = document.querySelector(".button-container .button:nth-child(5)"); // Otras consultas
-    const area20 = document.querySelector(".altres p"); // Descripción de otras consultas
+    const area1 = document.querySelector("label[for='dni']"); 
+    const area2 = document.querySelector("label[for='password']");
+    const area3 = document.querySelector("#primer button");
+    const area4 = document.querySelector(".button-container .button:nth-child(1)");
+    const area5 = document.querySelector("#segon h3"); 
+    const area6 = document.querySelector("label[for='polissa']"); 
+    const area7 = document.querySelector("label[for='data']"); 
+    const area8 = document.querySelector("label[for='lloc']");
+    const area9 = document.querySelector("label[for='tipus']");
+    const area10 = document.querySelector("label[for='descripcio']"); 
+    const area11 = document.querySelector("#segon button[type='submit']");
+    const area12 = document.querySelector(".button-container .button:nth-child(3)");
+    const area13 = document.querySelector(".consultar p:nth-child(1)");
+    const area14 = document.querySelector(".consultar p:nth-child(3)");
+    const area15 = document.querySelector(".consultar ul li:nth-child(1)");
+    const area16 = document.querySelector(".consultar ul li:nth-child(2)"); 
+    const area17 = document.querySelector(".consultar ul li:nth-child(3)"); 
+    const area18 = document.querySelector(".consultar ul li:nth-child(4)");
+    const area19 = document.querySelector(".button-container .button:nth-child(5)"); 
+    const area20 = document.querySelector(".altres p");
 
     area1.textContent = data.body.area.area1;
     area2.textContent = data.body.area.area2;
