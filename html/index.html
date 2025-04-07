@@ -1,131 +1,132 @@
 <!DOCTYPE html>
 <html lang="ca">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TotSegur</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <script src="..js/index.js" defer></script>
-    <script src="..js/main.js" defer></script>
-</head>
-<body>
-    <header>          
-        <div class="logo">
-            <a href="../html/index.html">
-                <img src="../images/logo.svg" alt="Logo">
-            </a>            
-        </div>
-        <div class="menu-container">
-            <button class="menu-icon" id="menu-button">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-            <nav class="header">
-                <a href="../html/index.html">INICI</a>
-                <a href="../html/nosaltres.html">NOSALTRES</a>
-                <a href="../html/serveis.html">SERVEIS</a>
-                <a href="../html/contacte.html">CONTACTE</a>
-            </nav>
-        </div>
-        <div class="idioma">
-            <button id="area-button" onclick="window.location.href='../html/area.html'">Area Privada</button>
-            <button id="idioma-button" onclick="idioma()">Idioma</button>
-            <div id="language-options" class="hidden">
-                <button onclick="canvi('ca')">Català</button>
-                <button onclick="canvi('es')">Castellà</button>
-            </div>
-        </div>
-    </header>
-    <main class="container">
-        <section class="serveis"> <!-- Secció de serveis -->
-            <div class="serveis-grid">
-                <div class="servei" onclick="servei('nosaltres')">
-                    <h2>Nosaltres</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TotSegur</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <script src="..js/index.js" defer></script>
+        <script src="..js/main.js" defer></script>
+    </head>
+    <body>
+        <header>          
+            <div class="logo">
+                <a href="../html/index.html">
                     <img src="../images/logo.svg" alt="Logo">
-                    <p>Qui som</p>
-                </div>
-                <div class="servei" onclick="servei('salut')">
-                    <h2>Salut</h2>
-                    <img src="../images/hospital.svg" alt="Hospital">
-                    <p>Assegurances mèdiques, dental, i més</p>
-                </div>          
-                <div class="servei" onclick="servei('llar')">
-                    <h2>Llar</h2>
-                    <img src="../images/casa.png" alt="Casa">
-                    <p>Protecció per a la teva llar, electrodomèstics i més</p>
-                </div>          
-                <div class="servei" onclick="servei('vehicles')">
-                    <h2>Vehicles</h2>
-                    <img src="../images/car.png" alt="Cotxe">              
-                    <p>Assegurances per a cotxes, motos, assistència en carretera i més</p>              
-                </div>          
+                </a>            
             </div>
-        </section>        
-        <div class="dades"> <!-- Secció de dades -->
-            <div class="dades-grid">
-                <p>ASSEGURATS</p>
-                <p>6.432</p>
-                <p>OFICINES</p>
-                <p>90</p>
-                <p>PROFESSIONALS</p>
-                <p>640</p>
-                <p>SATISFACCIÓ CLIENT</p>
-                <p>8.7</p>
+            <div class="menu-container">
+                <button class="menu-icon" id="menu-button">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <nav class="header">
+                    <a href="../html/index.html">INICI</a>
+                    <a href="../html/nosaltres.html">NOSALTRES</a>
+                    <a href="../html/serveis.html">SERVEIS</a>
+                    <a href="../html/contacte.html">CONTACTE</a>
+                </nav>
             </div>
-        </div>        
-        <section class="anunci"> <!-- Sección d'Anunci -->
-            <div class="anunci-grid">
-                <div class="promo">
-                    <img src="../images/seguros.jpg" alt="Seguros">
-                </div>
-                <div class="anunci">
-                    <h3>EL MILLOR PER A TÚ I A LA TEVA FAMILIA</h3>
-                    <button class="button" onclick="desplegable()">TRUQUENS</button> 
-                    <div class="desplegable">
-                        <p>Telèfon: 93 33 22 11</p>
-                        <p>- T'assegurem</p>
-                        <p>- Et calculem quotes</p>
-                        <p>- Fem el contracte</p>
-                    </div>
+            <div class="idioma">
+                <button id="area-button" onclick="window.location.href='../html/area.html'">Area Privada</button>
+                <button id="idioma-button" onclick="idioma()">Idioma</button>
+                <div id="language-options" class="hidden">
+                    <button onclick="canvi('ca')">Català</button>
+                    <button onclick="canvi('es')">Castellà</button>
                 </div>
             </div>
-        </section>        
-        <section class="info"> <!-- Sección d'aplicació i sinistres -->
-            <div class="super-grid">
-                <div class="app">
-                    <div class="app-img">
-                        <img src="../images/app.jpg" alt="App">
+        </header>
+        <br>
+        <main class="container">
+            <section class="serveis"> <!-- Secció de serveis -->
+                <div class="serveis-grid">
+                    <div class="servei" onclick="servei('nosaltres')">
+                        <h2>Nosaltres</h2>
+                        <img src="../images/logo.svg" alt="Logo">
+                        <p>Qui som</p>
                     </div>
-                    <div class="app-text">
-                        <p>Fes servir la nostra APP i gestiona les teves assegurances de manera fàcil i ràpida.</p>
-                        <br>
-                        <p>- Gestió</p>
-                        <p>- Seguiment</p>
-                        <p>- Assistència</p>
-                        <p>- Informació</p>
-                        <p>...</p>
+                    <div class="servei" onclick="servei('salut')">
+                        <h2>Salut</h2>
+                        <img src="../images/hospital.svg" alt="Hospital">
+                        <p>Assegurances mèdiques, dental, i més</p>
+                    </div>          
+                    <div class="servei" onclick="servei('llar')">
+                        <h2>Llar</h2>
+                        <img src="../images/casa.png" alt="Casa">
+                        <p>Protecció per a la teva llar, electrodomèstics i més</p>
+                    </div>          
+                    <div class="servei" onclick="servei('vehicles')">
+                        <h2>Vehicles</h2>
+                        <img src="../images/car.png" alt="Cotxe">              
+                        <p>Assegurances per a cotxes, motos, assistència en carretera i més</p>              
+                    </div>          
+                </div>
+            </section>        
+            <div class="dades"> <!-- Secció de dades -->
+                <div class="dades-grid">
+                    <p>ASSEGURATS</p>
+                    <p>6.432</p>
+                    <p>OFICINES</p>
+                    <p>90</p>
+                    <p>PROFESSIONALS</p>
+                    <p>640</p>
+                    <p>SATISFACCIÓ CLIENT</p>
+                    <p>8.7</p>
+                </div>
+            </div>        
+            <section class="anunci"> <!-- Sección d'Anunci -->
+                <div class="anunci-grid">
+                    <div class="promo">
+                        <img src="../images/seguros.jpg" alt="Seguros">
+                    </div>
+                    <div class="anunci">
+                        <h3>EL MILLOR PER A TÚ I A LA TEVA FAMILIA</h3>
+                        <button class="button" onclick="desplegable()">TRUQUENS</button> 
+                        <div class="desplegable">
+                            <p>Telèfon: 93 33 22 11</p>
+                            <p>- T'assegurem</p>
+                            <p>- Et calculem quotes</p>
+                            <p>- Fem el contracte</p>
+                        </div>
                     </div>
                 </div>
-                <div class="sinistres-grid">
-                    <div class="grid-img">
-                        <img src="../images/hogar.png" alt="Hogar">
+            </section>        
+            <section class="info"> <!-- Sección d'aplicació i sinistres -->
+                <div class="super-grid">
+                    <div class="app">
+                        <div class="app-img">
+                            <img src="../images/app.jpg" alt="App">
+                        </div>
+                        <div class="app-text">
+                            <p>Fes servir la nostra APP i gestiona les teves assegurances de manera fàcil i ràpida.</p>
+                            <br>
+                            <p>- Gestió</p>
+                            <p>- Seguiment</p>
+                            <p>- Assistència</p>
+                            <p>- Informació</p>
+                            <p>...</p>
+                        </div>
                     </div>
-                    <div class="sinistres">
-                        <h2>Sinistres</h2>              
-                        <button class="button" onclick="declarar()">Declarar sinistre</button>
-                        <button class="button" onclick="consultar()">Consultar sinistre</button>
+                    <div class="sinistres-grid">
+                        <div class="grid-img">
+                            <img src="../images/hogar.png" alt="Hogar">
+                        </div>
+                        <div class="sinistres">
+                            <h2>Sinistres</h2>              
+                            <button class="button" onclick="declarar()">Declarar sinistre</button>
+                            <button class="button" onclick="consultar()">Consultar sinistre</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>Email: totsegur@gmail.com</p>
-        <p>Telèfon: 933 322 211</p>
-        <p>Direcció: Carrer de la Canuda, 23, 08002 Barcelona</p>
-    </footer>
-</body>
+            </section>
+        </main>
+        <footer>
+            <p>Email: totsegur@gmail.com</p>
+            <p>Telèfon: 933 322 211</p>
+            <p>Direcció: Carrer de la Canuda, 23, 08002 Barcelona</p>
+        </footer>
+    </body>
 </html>
